@@ -155,9 +155,10 @@ export default function Home() {
               Cloud infrastructure &amp; systems engineering
             </h2>
             <p className="mt-2 max-w-2xl text-sm leading-6 text-lighttext2">
-              I build reliable software across cloud infrastructure, computer networking,
-              distributed systems, and local AI. These are projects I&apos;ve built and
-              systems I&apos;m bringing to life.
+              I&apos;m Moosa Alam, a University of Guelph computer science student and
+              software engineer in Milton, Ontario. I build reliable software across cloud
+              infrastructure, computer networking, distributed systems, and local AI.
+              These are projects I&apos;ve built and systems I&apos;m bringing to life.
             </p>
           </div>
         </div>
