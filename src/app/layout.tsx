@@ -13,8 +13,64 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Moosa Alam | Portfolio",
-  description: "Infrastructure & Systems Engineer — things I've built and things I'm bringing to life.",
+  metadataBase: new URL("https://moosaalam.dev"),
+  title: {
+    default: "Moosa Alam | Cloud Infrastructure & Systems Engineer",
+    template: "%s | Moosa Alam",
+  },
+  description:
+    "Moosa Alam is a University of Guelph computer science student and cloud infrastructure, systems, and software engineer building reliable networks, AI tools, and distributed systems.",
+  keywords: [
+    "Moosa Alam",
+    "cloud infrastructure engineer",
+    "systems engineer",
+    "software engineer",
+    "networking engineer",
+    "distributed systems",
+    "AI systems",
+    "University of Guelph",
+  ],
+  authors: [{ name: "Moosa Alam", url: "https://moosaalam.dev" }],
+  creator: "Moosa Alam",
+  publisher: "Moosa Alam",
+  alternates: {
+    canonical: "https://moosaalam.dev",
+  },
+  openGraph: {
+    type: "profile",
+    url: "https://moosaalam.dev",
+    title: "Moosa Alam | Cloud Infrastructure & Systems Engineer",
+    description:
+      "Portfolio of Moosa Alam, a systems and software engineer focused on cloud infrastructure, networking, reliability, and AI systems.",
+    siteName: "Moosa Alam",
+    locale: "en_CA",
+    images: [
+      {
+        url: "/moosa-profile.png",
+        width: 512,
+        height: 512,
+        alt: "Moosa Alam",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "Moosa Alam | Cloud Infrastructure & Systems Engineer",
+    description:
+      "Systems and software engineering portfolio focused on cloud infrastructure, networking, reliability, and AI systems.",
+    images: ["/moosa-profile.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   icons: {
     icon: [{ url: "/favicon.png" }],
   },

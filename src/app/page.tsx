@@ -37,8 +37,42 @@ const projects = [
 ] as const;
 
 export default function Home() {
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Moosa Alam",
+    url: "https://moosaalam.dev",
+    image: "https://moosaalam.dev/moosa-profile.png",
+    jobTitle: "Cloud Infrastructure and Systems Engineer",
+    description:
+      "Computer science student and software engineer focused on cloud infrastructure, networking, reliability, and AI systems.",
+    email: "mailto:alammoosa07@gmail.com",
+    alumniOf: {
+      "@type": "CollegeOrUniversity",
+      name: "University of Guelph",
+      url: "https://www.uoguelph.ca/",
+    },
+    sameAs: [
+      "https://www.linkedin.com/in/moosa-alam/",
+      "https://github.com/moosacodes",
+      "https://x.com/moosacodes",
+    ],
+    knowsAbout: [
+      "Cloud infrastructure",
+      "Distributed systems",
+      "Computer networking",
+      "Software engineering",
+      "Artificial intelligence",
+      "Site reliability engineering",
+    ],
+  };
+
   return (
     <main className="relative z-10 flex flex-col items-center scroll-smooth">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
       <AmbientBackground />
       <div className="relative w-full max-w-[900px] px-4">
         <div className="w-full max-w-[680px] pt-10 md:pt-20 lg:pt-32 rise-in">
@@ -109,11 +143,22 @@ export default function Home() {
 
       </div>
 
-      <div className="w-full max-w-[900px] px-4 pt-16 rise-in" style={{ animationDelay: "240ms" }}>
+      <section
+        id="engineering"
+        aria-labelledby="engineering-heading"
+        className="w-full max-w-[900px] px-4 pt-16 rise-in"
+        style={{ animationDelay: "240ms" }}
+      >
         <div className="mx-auto mb-7 flex items-center">
           <div>
-            <h2 className="text-[28px] font-semibold leading-8 tracking-[-0.025em] text-white/90">Engineering</h2>
-            <h2 className="mt-1 text-sm leading-5 text-lighttext2">Things I&apos;ve built and things I&apos;m bringing to life.</h2>
+            <h2 id="engineering-heading" className="text-[28px] font-semibold leading-8 tracking-[-0.025em] text-white/90">
+              Cloud infrastructure &amp; systems engineering
+            </h2>
+            <p className="mt-2 max-w-2xl text-sm leading-6 text-lighttext2">
+              I build reliable software across cloud infrastructure, computer networking,
+              distributed systems, and local AI. These are projects I&apos;ve built and
+              systems I&apos;m bringing to life.
+            </p>
           </div>
         </div>
 
@@ -124,7 +169,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </div>
+      </section>
 
       <div className="relative w-full flex flex-col items-center">
         <div className="relative z-10 w-full flex flex-col items-center">
