@@ -11,7 +11,7 @@ const projects = [
     role: "Creator & Engineer",
     year: "2026",
     description:
-      "Portable AI inference with offline execution and independently verifiable model artifacts.",
+      "A desktop AI workspace that runs models locally, without relying on cloud APIs.",
   },
   {
     name: "DeadAir",
@@ -40,8 +40,8 @@ export default function Home() {
   return (
     <main className="relative z-10 flex flex-col items-center scroll-smooth">
       <AmbientBackground />
-      <div className="relative w-full max-w-[680px] px-4">
-        <div className="mx-auto w-full pt-10 md:pt-20 lg:pt-32 rise-in">
+      <div className="relative w-full max-w-[900px] px-4">
+        <div className="w-full max-w-[680px] pt-10 md:pt-20 lg:pt-32 rise-in">
           <div className="flex items-center gap-2">
             <div>
               <Image
@@ -57,33 +57,33 @@ export default function Home() {
               <h1 className="text-[32px] font-bold leading-none tracking-[-0.03em]">Moosa Alam</h1>
               <div className="mb-1 flex text-[15px] leading-5">
                 <h3 className="flex row items-center">
-                <span className="text-lighttext3">Infrastructure &amp; Systems Engineer</span>
+                  <span className="text-lighttext3">CS Student · Infrastructure &amp; Systems</span>
                 </h3>
-                </div>
-                <SocialIcons />
-                <span className="mt-2 inline-flex items-center gap-2 text-xs text-lighttext2">
-                  <span className="availability-dot h-1.5 w-1.5 rounded-full bg-[#79cfc5]" />
-                  Open to Winter 2027 co-op
-                </span>
+              </div>
+              <SocialIcons />
+              <span className="mt-2 inline-flex items-center gap-2 text-xs text-lighttext2">
+                <span className="availability-dot h-1.5 w-1.5 rounded-full bg-[#79cfc5]" />
+                Open to Winter 2027 co-op
+              </span>
             </div>
           </div>
         </div>
 
-        <div className="mx-auto w-full pt-8 rise-in" style={{ animationDelay: "120ms" }}>
+        <div className="w-full max-w-[680px] pt-8 rise-in" style={{ animationDelay: "120ms" }}>
           <div className="flex justify-between">
             <h2 className="text-xs font-semibold tracking-[0.14em] text-neutral-200">NOW</h2>
           </div>
 
           <StatusLine
             prefix="Building Rethra —"
-            name="Portable, independently verifiable AI inference"
+            name="A desktop workspace for running AI locally"
           />
           <StatusLine
-            prefix="Exploring"
-            name="AI infrastructure, cloud & distributed systems"
+            prefix="Interested in"
+            name="cloud infrastructure, networking & systems"
           />
           <StatusLine
-            prefix="Computer Science — Cybersecurity @"
+            prefix="Computer Science @"
             name="University of Guelph"
             href="https://www.uoguelph.ca/"
           />
@@ -95,14 +95,15 @@ export default function Home() {
           <StatusLine
             prefix="AI Systems Engineering Intern @"
             name="Synk"
+            suffix="— 18% reliability improvement"
+          />
+          <StatusLine
+            prefix="Performance optimization —"
+            name="14% less frame-time degradation"
           />
           <StatusLine
             prefix="Earned"
             name="AWS Certified Cloud Practitioner"
-          />
-          <StatusLine
-            prefix="Built"
-            name="networking, automation & infrastructure projects"
           />
         </div>
 
@@ -131,7 +132,7 @@ export default function Home() {
 
           <section className="w-full max-w-[900px] px-4 py-12">
             <div className="flex flex-col gap-3 text-lighttext3 md:text-sm text-xs text-left md:text-center md:items-center">
-              <p>Have something interesting in mind?</p>
+              <p>Open to Winter 2027 cloud and infrastructure co-op roles.</p>
               <a
                 href="mailto:alammoosa07@gmail.com"
                 target="_blank"
