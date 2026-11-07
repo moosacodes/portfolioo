@@ -10,6 +10,7 @@ const projects = [
     name: "Rethra",
     role: "Creator & Engineer",
     year: "2026",
+    image: "/rethra-release-dossier.png",
     description:
       "A desktop AI workspace that runs models locally, without relying on cloud APIs.",
   },
