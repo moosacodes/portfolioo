@@ -152,14 +152,11 @@ export default function Home() {
         <div className="mx-auto mb-7 flex items-center">
           <div>
             <h2 id="engineering-heading" className="text-[28px] font-semibold leading-8 tracking-[-0.025em] text-white/90">
-              Cloud infrastructure &amp; systems engineering
+              Engineering
             </h2>
-            <p className="mt-2 max-w-2xl text-sm leading-6 text-lighttext2">
-              I&apos;m Moosa Alam, a University of Guelph computer science student and
-              software engineer in Milton, Ontario. I build reliable software across cloud
-              infrastructure, computer networking, distributed systems, and local AI.
-              These are projects I&apos;ve built and systems I&apos;m bringing to life.
-            </p>
+            <h2 className="mt-1 text-sm leading-5 text-lighttext2">
+              Things I&apos;ve built and things I&apos;m bringing to life.
+            </h2>
           </div>
         </div>
 
